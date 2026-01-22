@@ -8,15 +8,16 @@
 `sudo yum install -y bash curl jq`
 
 ### Где что должно лежать
-`/opt/sberbot/sberbot.sh` (0755)
-`/etc/systemd/system/sberbot.timer`
-`/etc/systemd/system/sberbot.service`
+- `/opt/sberbot/sberbot.sh` (0755)
+- `/etc/systemd/system/sberbot.timer`
+- `/etc/systemd/system/sberbot.service`
 
 ### Настройка
 В файле `sberbot.sh` в `BOT_TOKEN` нужно указать токен бота, от которого будут отправляться сообщения; в `CHAT_IDS` нужно указать нужные `chat_id` - кому отправлять.
 
 ### Запуск
 `sudo systemctl daemon-reload`
+
 `sudo systemctl enable --now sberbot.timer`
 
 ### Проверка
