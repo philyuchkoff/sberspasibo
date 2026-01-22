@@ -56,3 +56,5 @@
 5.  Повторите операцию для каждого нужного контакта.
 6. Если апдейты уже были, а новые не приходят, вызовите `getUpdates` с параметром `offset`, чтобы сбросить очередь:  
 `curl -s https://api.telegram.org/bot<TOKEN>/getUpdates?offset=-1`
+
+[Что такое .timer в systemd](about_timer.md)
