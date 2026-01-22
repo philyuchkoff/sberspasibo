@@ -1,0 +1,13 @@
+# Должен лежать в /etc/systemd/system/sberbot.service
+
+[Unit]
+Description=SberSpasibo cashback reminder
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=nobody
+ExecStart=/opt/sberbot/sberbot.sh
+PrivateTmp=true
+NoNewPrivileges=true
